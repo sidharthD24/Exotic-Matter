@@ -61,7 +61,20 @@ header {
 .hero {
     max-width: 1150px;
     margin: auto;
-    padding: 120px 30px 130px;
+    min-height: 650px;
+    padding: 120px 30px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
 }
 
 .hero-text {
