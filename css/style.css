@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f5;
+    color: #181818;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #ddddda;
+    background: rgba(247, 247, 245, 0.95);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 22px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+
+/* HERO */
+
+.hero {
+    max-width: 1150px;
+    margin: auto;
+    padding: 120px 30px 130px;
+}
+
+.hero-text {
+    max-width: 850px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(45px, 7vw, 82px);
+    line-height: 1.02;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: #555;
+}
+
+.intro {
+    max-width: 650px;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.primary {
+    background: #181818;
+    color: white;
+}
+
+.secondary {
+    border: 1px solid #aaa;
+    color: #222;
+}
+
+
+/* SECTIONS */
+
+.research-preview,
+.latest {
+    max-width: 1150px;
+    margin: auto;
+    padding: 90px 30px;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e2e2de;
+    padding: 35px;
+    min-height: 230px;
+}
+
+.card-number {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+}
+
+
+/* ABOUT */
+
+.about-preview {
+    background: #181818;
+    color: white;
+    padding: 100px 30px;
+}
+
+.about-preview > div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-preview .eyebrow {
+    color: #aaa;
+}
+
+.about-preview h2 {
+    font-size: 46px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.about-preview p {
+    color: #bbb;
+    font-size: 18px;
+}
+
+.text-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* BLOG */
+
+.blog-placeholder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.blog-placeholder article {
+    padding: 30px 0;
+    border-top: 1px solid #bbb;
+}
+
+.post-category {
+    font-size: 11px !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #777 !important;
+    margin-bottom: 15px;
+}
+
+.blog-placeholder h3 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.blog-placeholder article p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.blog-placeholder a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #ddd;
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .intro {
+        font-size: 17px;
+    }
+
+    .research-preview,
+    .latest {
+        padding: 70px 20px;
+    }
+
+    .cards,
+    .blog-placeholder {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .about-preview h2 {
+        font-size: 34px;
+    }
+
+    footer {
+        margin: 0 20px;
+        padding: 30px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
