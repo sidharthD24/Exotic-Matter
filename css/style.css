@@ -622,3 +622,264 @@ footer p {
         padding: 28px;
     }
 }
+
+
+/* =========================================================
+   SIMULATION PAGE
+   ========================================================= */
+
+.inner-header {
+    position: relative;
+
+    background: #111;
+
+    border-bottom: 1px solid #333;
+}
+
+.page-hero {
+    background: #111;
+
+    color: #ffffff;
+
+    padding: 120px 8% 100px;
+}
+
+.page-hero-content {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.page-hero .eyebrow {
+    color: rgba(255,255,255,0.55);
+}
+
+.page-hero h1 {
+    font-size: clamp(55px, 8vw, 95px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.page-hero h1 span {
+    color: rgba(255,255,255,0.55);
+}
+
+.page-hero p:last-child {
+    max-width: 680px;
+
+    font-size: 19px;
+
+    color: rgba(255,255,255,0.72);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SIMULATION SECTION
+   ========================================================= */
+
+.simulation-section {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 110px 35px;
+}
+
+.section-description {
+    max-width: 720px;
+
+    color: #666;
+
+    font-size: 17px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================================
+   IMAGE GRID
+   ========================================================= */
+
+.simulation-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 60px 30px;
+
+    margin-top: 65px;
+}
+
+
+/* =========================================================
+   SIMULATION CARD
+   ========================================================= */
+
+.simulation-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e1dd;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.simulation-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.10);
+}
+
+
+/* IMAGE */
+
+.simulation-image {
+    width: 100%;
+
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+.simulation-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.5s ease;
+}
+
+.simulation-card:hover
+.simulation-image img {
+    transform: scale(1.03);
+}
+
+
+/* TEXT */
+
+.simulation-content {
+    padding: 28px 30px 32px;
+}
+
+.simulation-number {
+    display: block;
+
+    font-size: 12px;
+
+    color: #999;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 14px;
+}
+
+.simulation-content h3 {
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+
+    color: #181818;
+}
+
+.simulation-content p {
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   CONTEXT SECTION
+   ========================================================= */
+
+.simulation-context {
+    background: #151515;
+
+    color: #ffffff;
+
+    padding: 110px 35px;
+}
+
+.simulation-context > div {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.simulation-context .eyebrow {
+    color: rgba(255,255,255,0.50);
+}
+
+.simulation-context h2 {
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 25px;
+}
+
+.simulation-context p:last-child {
+    color: rgba(255,255,255,0.70);
+
+    font-size: 18px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   SIMULATION PAGE MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .page-hero {
+        padding: 90px 25px 80px;
+    }
+
+    .page-hero h1 {
+        font-size: 55px;
+
+        letter-spacing: -2px;
+    }
+
+    .simulation-section {
+        padding: 75px 20px;
+    }
+
+    .simulation-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .simulation-context {
+        padding: 80px 25px;
+    }
+
+    .simulation-context h2 {
+        font-size: 38px;
+    }
+
+}
