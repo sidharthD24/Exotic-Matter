@@ -883,3 +883,59 @@ footer p {
     }
 
 }
+
+/* ================================
+   RESEARCH DROPDOWN
+================================ */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+
+    min-width: 220px;
+    padding: 10px 0;
+
+    background: rgba(20,20,20,.96);
+    border: 1px solid rgba(255,255,255,.12);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease,
+        visibility .25s ease;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 18px;
+
+    color: rgba(255,255,255,.75) !important;
+    font-size: 13px !important;
+
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(255,255,255,.08);
+    color: #fff !important;
+}
+
+/* Show dropdown when hovering over Research */
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
