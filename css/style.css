@@ -939,3 +939,37 @@ footer p {
     visibility: visible;
     transform: translateY(0);
 }
+
+
+```css
+/* =================================
+   SIMULATIONS PAGE BACKGROUND
+================================= */
+
+.simulations-hero {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.40)
+        ),
+        url("../images/background_simulations.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+}
+
+.simulations-hero .page-hero-content {
+    position: relative;
+    z-index: 2;
+}
+```
