@@ -970,4 +970,438 @@ footer p {
     position: relative;
     z-index: 2;
 }
-```
+
+
+/* =========================================================
+   EXPERIMENTAL PAGE
+   ========================================================= */
+
+.experimental-page {
+    background: #f7f7f5;
+    color: #181818;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.experimental-hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 120px 8% 90px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/experiment.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+}
+
+.experimental-hero-content {
+    max-width: 850px;
+}
+
+.experimental-label {
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 20px;
+
+    color: rgba(255,255,255,0.70);
+}
+
+.experimental-hero h1 {
+    font-size: clamp(55px, 8vw, 95px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.experimental-hero p:last-child {
+    max-width: 680px;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: rgba(255,255,255,0.82);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.experimental-intro {
+    padding: 120px 30px;
+}
+
+.experimental-intro-content {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.experimental-intro .section-label {
+    color: #777;
+}
+
+.experimental-intro h2 {
+    font-size: clamp(38px, 5vw, 60px);
+
+    line-height: 1.06;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 30px;
+}
+
+.experimental-intro p {
+    max-width: 720px;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   EXPERIMENTAL SECTIONS
+   ========================================================= */
+
+.experimental-section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+}
+
+.experimental-alternate {
+    max-width: none;
+
+    background: #eeeeeb;
+}
+
+.experimental-alternate
+.experimental-heading,
+.experimental-alternate
+.experimental-feature {
+    max-width: 1140px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experimental-heading {
+    margin-bottom: 55px;
+}
+
+.experimental-heading .section-label {
+    color: #777;
+}
+
+.experimental-heading h2 {
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+/* =========================================================
+   FEATURE
+   ========================================================= */
+
+.experimental-feature {
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.experimental-feature.reverse {
+    grid-template-columns: 0.85fr 1.15fr;
+}
+
+.experimental-feature.reverse
+.experimental-image {
+    order: 2;
+}
+
+.experimental-feature.reverse
+.experimental-text {
+    order: 1;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+.experimental-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #ddd;
+}
+
+.experimental-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 480px;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.experimental-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.experimental-text h3 {
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    margin-bottom: 22px;
+}
+
+.experimental-text p {
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    margin-bottom: 20px;
+}
+
+.experimental-text ul {
+    margin-top: 25px;
+
+    padding-left: 20px;
+
+    color: #555;
+}
+
+.experimental-text li {
+    margin-bottom: 9px;
+}
+
+
+/* =========================================================
+   WORKFLOW
+   ========================================================= */
+
+.experimental-workflow {
+    padding: 120px 30px;
+
+    background: #151515;
+
+    color: #ffffff;
+}
+
+.workflow-heading {
+    max-width: 850px;
+
+    margin: 0 auto 60px;
+}
+
+.workflow-heading .section-label {
+    color: rgba(255,255,255,0.5);
+}
+
+.workflow-heading h2 {
+    font-size: clamp(38px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.workflow-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #444;
+}
+
+.workflow-card {
+    padding: 35px 25px;
+
+    border-right: 1px solid #444;
+}
+
+.workflow-card:last-child {
+    border-right: none;
+}
+
+.workflow-card span {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #888;
+}
+
+.workflow-card h3 {
+    font-size: 23px;
+
+    margin: 28px 0 12px;
+}
+
+.workflow-card p {
+    color: rgba(255,255,255,0.58);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONNECTION TO SIMULATIONS
+   ========================================================= */
+
+.experimental-connection {
+    padding: 120px 30px;
+
+    background: #f7f7f5;
+}
+
+.connection-content {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.connection-content .section-label {
+    color: #777;
+}
+
+.connection-content h2 {
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.06;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 30px;
+}
+
+.connection-content p {
+    max-width: 720px;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .experimental-hero {
+        min-height: 70vh;
+
+        padding: 120px 25px 70px;
+    }
+
+    .experimental-hero h1 {
+        letter-spacing: -2.5px;
+    }
+
+    .experimental-intro {
+        padding: 80px 25px;
+    }
+
+    .experimental-section {
+        padding: 75px 25px;
+    }
+
+    .experimental-feature,
+    .experimental-feature.reverse {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .experimental-feature.reverse
+    .experimental-image,
+    .experimental-feature.reverse
+    .experimental-text {
+        order: initial;
+    }
+
+    .experimental-image img {
+        height: 350px;
+    }
+
+    .experimental-workflow {
+        padding: 80px 25px;
+    }
+
+    .workflow-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-card {
+        border-right: none;
+
+        border-bottom: 1px solid #444;
+    }
+
+    .workflow-card:last-child {
+        border-bottom: none;
+    }
+
+    .experimental-connection {
+        padding: 80px 25px;
+    }
+
+}
