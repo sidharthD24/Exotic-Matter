@@ -1406,3 +1406,369 @@ footer p {
 
 }
 
+
+/* =========================================================
+   OPTICAL TOMOGRAPHY PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   TOMOGRAPHY HERO
+   ========================================================= */
+
+.tomography-hero {
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../images/tomography.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN TOMOGRAPHY IMAGE
+   ========================================================= */
+
+.tomography-main-image {
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 60px auto 0;
+
+    background: #111111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tomography-main-image img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   TOMOGRAPHY IMAGE CARDS
+   ========================================================= */
+
+.tomography-hero + .simulation-section {
+    padding-top: 100px;
+}
+
+
+/*
+   Keep the complete image visible.
+   No fixed height and no object-fit: cover.
+*/
+
+.simulation-card .simulation-image img {
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    max-width: 100%;
+
+    transition: transform 0.4s ease;
+}
+
+
+.simulation-card:hover .simulation-image img {
+
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   TOMOGRAPHY SYSTEM SECTIONS
+   ========================================================= */
+
+.tomography-section {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* =========================================================
+   TOMOGRAPHY CONTEXT
+   ========================================================= */
+
+.tomography-context {
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.72)
+        ),
+        url("../images/tomography.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TOMOGRAPHY TEXT
+   ========================================================= */
+
+.tomography-text {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.tomography-text p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================================
+   TOMOGRAPHY METHOD CARDS
+   ========================================================= */
+
+.tomography-method-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.68)
+        );
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    padding: 35px;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+.tomography-method-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(255, 255, 255, 0.30);
+}
+
+
+.tomography-method-card h3 {
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.tomography-method-card p {
+
+    color: rgba(255, 255, 255, 0.68);
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TOMOGRAPHY WORKFLOW
+   ========================================================= */
+
+.tomography-workflow {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid #dddddd;
+}
+
+
+.tomography-workflow-item {
+
+    padding: 35px 25px;
+
+    border-right:
+        1px solid #dddddd;
+}
+
+
+.tomography-workflow-item:last-child {
+
+    border-right: none;
+}
+
+
+.tomography-workflow-item span {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #888888;
+}
+
+
+.tomography-workflow-item h3 {
+
+    font-size: 22px;
+
+    margin:
+        25px 0 12px;
+}
+
+
+.tomography-workflow-item p {
+
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TOMOGRAPHY FUTURE DEVELOPMENT
+   ========================================================= */
+
+.tomography-future {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.78),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/tomography.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+}
+
+
+.tomography-future h2 {
+
+    color: #ffffff;
+}
+
+
+.tomography-future p {
+
+    color:
+        rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .tomography-main-image {
+
+        margin-top: 40px;
+
+    }
+
+
+    .tomography-workflow {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .tomography-workflow-item {
+
+        border-right: none;
+
+        border-bottom:
+            1px solid #dddddd;
+
+    }
+
+
+    .tomography-workflow-item:last-child {
+
+        border-bottom: none;
+
+    }
+
+
+    .tomography-method-card {
+
+        padding: 28px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 550px) {
+
+    .tomography-main-image {
+
+        margin-top: 30px;
+
+    }
+
+
+    .simulation-card .simulation-image img {
+
+        width: 100%;
+        height: auto;
+
+    }
+
+}
