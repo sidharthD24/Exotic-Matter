@@ -1,307 +1,613 @@
-<!-- =========================================
-     03 — BEAM DIAGNOSTICS
-     ========================================= -->
+<!DOCTYPE html>
+<html lang="en">
 
-<section class="experimental-section">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="experimental-heading">
+    <title>Optical Tomography | Sidharth Dash</title>
 
-        <p class="section-label">
-            03 — BEAM DIAGNOSTICS
-        </p>
+    <meta name="description"
+          content="Optical tomography, plasma diagnostics, multi-camera imaging and tomographic reconstruction research by Sidharth Dash.">
 
-        <h2>
-            Visualizing the
-            extracted beam.
-        </h2>
-
-    </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 
-    <!-- BEAM PROFILING -->
+<body>
 
-    <div class="experimental-feature">
+<header class="inner-header">
 
-        <div class="experimental-image">
-            <img src="images/beam-profile.jpg"
-                 alt="Negative hydrogen ion beam profile">
+    <nav class="navbar">
+
+        <div class="logo">
+            Sidharth Dash
         </div>
 
-        <div class="experimental-text">
+        <div class="nav-links">
 
-            <h3>
-                Visible-range CCD diagnostics
-            </h3>
+            <a href="index.html">
+                Home
+            </a>
 
-            <p>
-                Visible-range CCD imaging is used to obtain spatial
-                profiles of the extracted negative hydrogen ion beam.
-                The diagnostic provides a non-invasive method for
-                characterizing the transverse beam distribution
-                during beam transport.
-            </p>
+            <a href="experimental.html">
+                Experiments
+            </a>
 
-            <p>
-                The measured profiles provide information about beam
-                intensity distribution, spatial inhomogeneity and
-                beam evolution along the transport line.
-            </p>
+            <a href="3d-simulations.html">
+                3D Simulations
+            </a>
 
-            <p>
-                These experimental measurements also provide
-                reference data for comparison with computational
-                beam-transport and space-charge models.
-            </p>
+            <a href="tomography.html" class="active">
+                Tomography
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
 
         </div>
 
-    </div>
+    </nav>
+
+</header>
 
 
-    <!-- =====================================
-         OPTICAL TOMOGRAPHY
-         ===================================== -->
+<main>
 
-    <div class="diagnostic-tomography">
 
-        <div class="diagnostic-tomography-heading">
+    <!-- =========================================
+         PAGE INTRO
+         ========================================= -->
 
-            <p class="section-label">
-                OPTICAL TOMOGRAPHY
+    <section class="page-hero tomography-hero">
+
+        <div class="page-hero-content">
+
+            <p class="eyebrow">
+                EXPERIMENTAL DIAGNOSTICS
+            </p>
+
+            <h1>
+                Optical<br>
+                Tomography
+            </h1>
+
+            <p>
+                Development of a multi-view optical diagnostic system
+                for non-invasive characterization and tomographic
+                reconstruction of photon-emitting plasma.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TOMOGRAPHY OVERVIEW
+         ========================================= -->
+
+    <section class="simulation-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                DIAGNOSTIC DEVELOPMENT
             </p>
 
             <h2>
-                Looking beyond a
-                single beam profile.
+                Reconstructing plasma structure
+                from optical projections
+            </h2>
+
+            <p class="section-description">
+
+                Optical emission from a plasma contains spatial
+                information about the emitting region. By observing
+                the plasma along multiple lines of sight, these
+                projections can be combined to reconstruct its
+                internal two-dimensional structure.
+
+                <br><br>
+
+                The tomography system integrates optical imaging,
+                synchronized CCD acquisition and computational
+                reconstruction to provide a non-invasive approach
+                for investigating spatial variations in plasma
+                emission.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             MAIN TOMOGRAPHY IMAGE
+             ===================================== -->
+
+        <div class="tomography-main-image">
+
+            <img
+                src="images/tomography.jpg"
+                alt="Optical tomography experimental system">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         TOMOGRAPHY SYSTEM
+         ========================================= -->
+
+    <section class="simulation-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                EXPERIMENTAL SYSTEM
+            </p>
+
+            <h2>
+                A multi-camera view
+                of the plasma
+            </h2>
+
+            <p class="section-description">
+
+                The diagnostic system uses multiple line CCD cameras
+                positioned around the experimental region. Pinhole
+                optics are used to define the imaging geometry and
+                project the photon-emitting region onto the detector.
+
+                <br><br>
+
+                The cameras acquire complementary line-of-sight
+                measurements from different viewing directions.
+                These measurements form the projection data required
+                for subsequent tomographic reconstruction.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="simulation-grid">
+
+
+            <!-- SYSTEM COMPONENT 1 -->
+
+            <article class="simulation-card">
+
+                <div class="simulation-image">
+
+                    <img
+                        src="images/tomo_camera.png"
+                        alt="CCD camera used for optical tomography">
+
+                </div>
+
+                <div class="simulation-content">
+
+                    <span class="simulation-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Line CCD Imaging
+                    </h3>
+
+                    <p>
+                        Visible-range line CCD cameras are used to
+                        record optical emission from the plasma along
+                        defined lines of sight.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SYSTEM COMPONENT 2 -->
+
+            <article class="simulation-card">
+
+                <div class="simulation-image">
+
+                    <img
+                        src="images/pinhole.png"
+                        alt="Pinhole optical imaging system">
+
+                </div>
+
+                <div class="simulation-content">
+
+                    <span class="simulation-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Pinhole Optics
+                    </h3>
+
+                    <p>
+                        Pinhole-based imaging establishes the projection
+                        geometry between the emitting plasma region and
+                        the CCD detector.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SYSTEM COMPONENT 3 -->
+
+            <article class="simulation-card">
+
+                <div class="simulation-image">
+
+                    <img
+                        src="images/tomo_setup.png"
+                        alt="Multi-camera optical tomography setup">
+
+                </div>
+
+                <div class="simulation-content">
+
+                    <span class="simulation-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Multi-view Acquisition
+                    </h3>
+
+                    <p>
+                        Multiple cameras provide projections from
+                        different viewing directions, allowing spatial
+                        information to be obtained from several
+                        perspectives.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SYSTEM COMPONENT 4 -->
+
+            <article class="simulation-card">
+
+                <div class="simulation-image">
+
+                    <img
+                        src="images/acquisition.png"
+                        alt="Tomographic data acquisition system">
+
+                </div>
+
+                <div class="simulation-content">
+
+                    <span class="simulation-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Synchronized Acquisition
+                    </h3>
+
+                    <p>
+                        Simultaneous acquisition of the optical
+                        projections enables measurements from different
+                        viewing directions to be correlated under
+                        comparable plasma conditions.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         RECONSTRUCTION
+         ========================================= -->
+
+    <section class="simulation-context">
+
+        <div>
+
+            <p class="eyebrow">
+                TOMOGRAPHIC RECONSTRUCTION
+            </p>
+
+            <h2>
+                From line-of-sight measurements
+                to spatial structure
+            </h2>
+
+            <p>
+
+                The acquired optical signals are processed to obtain
+                projection data corresponding to different viewing
+                angles. These projections are then used to estimate
+                the underlying two-dimensional emission distribution.
+
+                <br><br>
+
+                The computational framework is developed using
+                Python-based numerical and image-processing tools.
+                Different reconstruction approaches are investigated
+                to understand the influence of projection number,
+                geometry and experimental limitations.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         RECONSTRUCTION METHODS
+         ========================================= -->
+
+    <section class="simulation-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                RECONSTRUCTION METHODS
+            </p>
+
+            <h2>
+                Comparing approaches
+                to image reconstruction
             </h2>
 
         </div>
 
 
-        <div class="diagnostic-tomography-content">
+
+        <div class="simulation-grid">
+
+
+            <!-- BP -->
+
+            <article class="simulation-card">
+
+                <div class="simulation-image">
+
+                    <img
+                        src="images/bp_reconstruction.png"
+                        alt="Back projection tomography reconstruction">
+
+                </div>
+
+                <div class="simulation-content">
+
+                    <span class="simulation-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Back Projection
+                    </h3>
+
+                    <p>
+                        Direct back projection is used to distribute
+                        measured projection information across the
+                        reconstruction domain and obtain an initial
+                        estimate of the spatial emission distribution.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- FBP -->
+
+            <article class="simulation-card">
+
+                <div class="simulation-image">
+
+                    <img
+                        src="images/fbp_reconstruction.png"
+                        alt="Filtered back projection tomography reconstruction">
+
+                </div>
+
+                <div class="simulation-content">
+
+                    <span class="simulation-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Filtered Back Projection
+                    </h3>
+
+                    <p>
+                        Projection data are filtered before
+                        back-projection to reduce reconstruction
+                        blurring and improve the representation of
+                        spatial features.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SART -->
+
+            <article class="simulation-card">
+
+                <div class="simulation-image">
+
+                    <img
+                        src="images/sart_reconstruction.png"
+                        alt="SART optical tomography reconstruction">
+
+                </div>
+
+                <div class="simulation-content">
+
+                    <span class="simulation-number">
+                        03
+                    </span>
+
+                    <h3>
+                        SART Reconstruction
+                    </h3>
+
+                    <p>
+                        The Simultaneous Algebraic Reconstruction
+                        Technique provides an iterative approach in
+                        which the reconstructed distribution is
+                        progressively refined using the measured
+                        projections.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         EXPERIMENTAL WORKFLOW
+         ========================================= -->
+
+    <section class="simulation-context">
+
+        <div>
+
+            <p class="eyebrow">
+                EXPERIMENTAL WORKFLOW
+            </p>
+
+            <h2>
+                Observe. Acquire.
+                Reconstruct. Understand.
+            </h2>
 
             <p>
-                A major part of the experimental work involves the
-                development of a visible-range optical tomography
-                system for non-invasive characterization of
+
+                The tomography workflow begins with optical emission
+                from the plasma, followed by multi-view image
+                acquisition using CCD cameras and pinhole optics.
+                The recorded signals are then calibrated and processed
+                to obtain projection data.
+
+                <br><br>
+
+                These projections form the input to the tomographic
+                reconstruction algorithms, allowing the spatial
+                distribution of the emitting region to be estimated
+                and subsequently compared with experimental plasma
+                behaviour.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FUTURE DEVELOPMENT
+         ========================================= -->
+
+    <section class="simulation-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                ONGOING DEVELOPMENT
+            </p>
+
+            <h2>
+                Towards time-resolved
+                volumetric diagnostics
+            </h2>
+
+            <p class="section-description">
+
+                Current development focuses on improving the
+                experimental geometry, increasing the number of
+                viewing directions and improving the accuracy of
+                tomographic reconstruction.
+
+                <br><br>
+
+                Future extensions will investigate time-resolved
+                measurements and the possibility of extending the
+                diagnostic from two-dimensional reconstruction towards
+                more complete spatial characterization of
                 photon-emitting plasma and beam-related phenomena.
-            </p>
 
-            <p>
-                Unlike conventional beam profiling, where a single
-                projection provides information about the observed
-                transverse distribution, optical tomography uses
-                measurements from multiple viewing directions to
-                reconstruct the spatial distribution of the emitting
-                region.
-            </p>
-
-            <p>
-                The diagnostic combines line CCD cameras, pinhole
-                optics and synchronized data acquisition. Each camera
-                records the optical emission along a different
-                line-of-sight, providing complementary projections
-                of the plasma or beam-emitting region.
             </p>
 
         </div>
 
-    </div>
+    </section>
 
 
-    <!-- TOMOGRAPHY SYSTEM IMAGE -->
-
-    <div class="tomography-feature">
-
-        <div class="tomography-image">
-
-            <img src="images/tomography.jpg"
-                 alt="Optical tomography experimental system">
-
-        </div>
+</main>
 
 
-        <div class="experimental-text">
 
-            <h3>
-                Multi-camera tomographic system
-            </h3>
+<footer>
 
-            <p>
-                The experimental system consists of multiple line CCD
-                cameras arranged around the measurement region.
-                Pinhole optics are used to define the imaging geometry
-                and project the photon-emitting region onto the CCD
-                detectors.
-            </p>
+    <div>
 
-            <p>
-                Simultaneous acquisition of the different projections
-                allows the measured optical emission to be treated as
-                a tomographic dataset. The acquired signals are
-                subsequently calibrated, processed and mapped to the
-                corresponding projection geometry.
-            </p>
-
-            <p>
-                The system has been developed with emphasis on both
-                the experimental hardware and the computational
-                reconstruction pipeline, providing a complete
-                measurement-to-reconstruction framework.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- TOMOGRAPHY COMPONENTS -->
-
-    <div class="tomography-grid">
-
-        <div class="tomography-card">
-
-            <span>01</span>
-
-            <h3>
-                Multiple CCD cameras
-            </h3>
-
-            <p>
-                Multiple line CCD cameras acquire optical emission
-                from different viewing directions around the
-                experimental region.
-            </p>
-
-        </div>
-
-
-        <div class="tomography-card">
-
-            <span>02</span>
-
-            <h3>
-                Pinhole optics
-            </h3>
-
-            <p>
-                Pinhole-based imaging defines the line-of-sight
-                projection and provides controlled optical
-                magnification of the emitting region.
-            </p>
-
-        </div>
-
-
-        <div class="tomography-card">
-
-            <span>03</span>
-
-            <h3>
-                Synchronized acquisition
-            </h3>
-
-            <p>
-                Synchronized camera operation enables projection
-                measurements to be obtained under comparable
-                experimental conditions.
-            </p>
-
-        </div>
-
-
-        <div class="tomography-card">
-
-            <span>04</span>
-
-            <h3>
-                Computational reconstruction
-            </h3>
-
-            <p>
-                Measured projections are processed computationally
-                to reconstruct the spatial distribution of the
-                photon-emitting region.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- RECONSTRUCTION -->
-
-    <div class="tomography-reconstruction">
-
-        <div>
-
-            <p class="section-label">
-                RECONSTRUCTION
-            </p>
-
-            <h2>
-                From optical projections
-                to spatial information.
-            </h2>
-
-        </div>
-
-
-        <div>
-
-            <p>
-                The reconstruction framework is developed in Python
-                using numerical and image-processing tools. Different
-                reconstruction approaches are investigated to
-                understand the influence of projection number,
-                viewing geometry and experimental limitations.
-            </p>
-
-            <p>
-                The present framework includes Back Projection (BP),
-                Filtered Back Projection (FBP) and iterative
-                reconstruction using the Simultaneous Algebraic
-                Reconstruction Technique (SART).
-            </p>
-
-            <p>
-                These methods provide complementary approaches for
-                recovering the two-dimensional distribution from the
-                measured line-of-sight projections.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- FUTURE DEVELOPMENT -->
-
-    <div class="tomography-future">
-
-        <p class="section-label">
-            FUTURE DEVELOPMENT
-        </p>
-
-        <h3>
-            Towards higher-dimensional
-            plasma diagnostics.
-        </h3>
+        <strong>
+            Sidharth Dash
+        </strong>
 
         <p>
-            Further development of the system will focus on increasing
-            the number of viewing directions, improving geometrical
-            calibration and reconstruction accuracy, and extending
-            the diagnostic towards time-resolved measurements.
-        </p>
-
-        <p>
-            The longer-term objective is to establish a more complete
-            spatial and temporal characterization of photon-emitting
-            plasma and beam-related phenomena using optical
-            tomography.
+            Research • Plasma Physics •
+            Beam Diagnostics
         </p>
 
     </div>
 
-</section>
+    <p>
+        © 2026 Sidharth Dash
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
