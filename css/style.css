@@ -1407,20 +1407,14 @@ footer p {
 }
 
 /* =========================================
-   DIAGNOSTIC TAG
+   BEAM DIAGNOSTICS — IMAGE
    ========================================= */
 
-.diagnostic-tag {
-    display: inline-block;
-
-    margin-bottom: 18px;
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    color: rgba(255,255,255,0.50);
+.experimental-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 
@@ -1428,44 +1422,29 @@ footer p {
    TOMOGRAPHY INTRODUCTION
    ========================================= */
 
-.tomography-introduction {
-    max-width: 1140px;
+.diagnostic-tomography {
+    margin-top: 110px;
+    padding-top: 80px;
 
-    margin: 130px auto 100px;
-
-    padding-top: 90px;
-
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid #ddd;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
-    gap: 80px;
+    gap: 70px;
+    align-items: start;
 }
 
-.tomography-intro-heading h2 {
-    color: #ffffff;
-
-    font-size: clamp(35px, 5vw, 60px);
-
+.diagnostic-tomography-heading h2 {
+    font-size: clamp(36px, 5vw, 58px);
     line-height: 1.05;
-
     letter-spacing: -2px;
 }
 
-.tomography-intro-heading .section-label {
-    color: rgba(255,255,255,0.50);
-}
-
-.tomography-intro-text p {
-    color: rgba(255,255,255,0.70);
-
+.diagnostic-tomography-content p {
+    color: #666;
     font-size: 17px;
-
     line-height: 1.8;
-
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 
@@ -1473,64 +1452,36 @@ footer p {
    TOMOGRAPHY SYSTEM
    ========================================= */
 
-.tomography-system {
-    max-width: 1140px;
-
-    margin: auto;
+.tomography-feature {
+    margin-top: 90px;
 
     display: grid;
-
     grid-template-columns: 1.15fr 0.85fr;
-
     gap: 60px;
-
     align-items: center;
 }
 
-.tomography-system-image {
+
+/* Full image — no cropping */
+
+.tomography-image {
     width: 100%;
 
-    background: #050505;
+    background: #eeeeeb;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
-    border: 1px solid rgba(255,255,255,0.12);
+    overflow: hidden;
 }
 
-.tomography-system-image img {
+.tomography-image img {
+    width: 100%;
+    height: auto;
     display: block;
 
-    width: 100%;
-
-    height: auto;
-
     object-fit: contain;
-
-    max-width: 100%;
-}
-
-.tomography-system-text h3 {
-    color: #ffffff;
-
-    font-size: 32px;
-
-    line-height: 1.15;
-
-    margin-bottom: 25px;
-}
-
-.tomography-system-text p {
-    color: rgba(255,255,255,0.70);
-
-    font-size: 16px;
-
-    line-height: 1.8;
-
-    margin-bottom: 20px;
 }
 
 
@@ -1538,146 +1489,70 @@ footer p {
    TOMOGRAPHY COMPONENTS
    ========================================= */
 
-.tomography-components {
-    max-width: 1140px;
-
-    margin: 100px auto;
+.tomography-grid {
+    margin-top: 100px;
 
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
 
-    border-top: 1px solid rgba(255,255,255,0.18);
+    border-top: 1px solid #ddd;
 }
 
-.tomography-component {
+.tomography-card {
     padding: 35px 25px;
 
-    border-right: 1px solid rgba(255,255,255,0.18);
+    border-right: 1px solid #ddd;
 }
 
-.tomography-component:last-child {
+.tomography-card:last-child {
     border-right: none;
 }
 
-.tomography-component span {
+.tomography-card span {
     font-size: 12px;
-
     font-weight: 700;
-
-    color: rgba(255,255,255,0.45);
+    color: #999;
 }
 
-.tomography-component h3 {
-    color: #ffffff;
-
-    font-size: 21px;
-
-    margin: 28px 0 12px;
+.tomography-card h3 {
+    font-size: 22px;
+    margin: 25px 0 15px;
 }
 
-.tomography-component p {
-    color: rgba(255,255,255,0.60);
-
+.tomography-card p {
+    color: #666;
     font-size: 14px;
-
     line-height: 1.7;
 }
 
 
 /* =========================================
-   RECONSTRUCTION METHODS
+   RECONSTRUCTION
    ========================================= */
 
-.tomography-methods {
-    max-width: 1140px;
+.tomography-reconstruction {
+    margin-top: 120px;
 
-    margin: 120px auto 60px;
+    padding: 90px 0 0;
 
-    padding-top: 90px;
-
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid #ddd;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 80px;
 }
 
-.tomography-methods-heading .section-label {
-    color: rgba(255,255,255,0.50);
-}
-
-.tomography-methods-heading h2 {
-    color: #ffffff;
-
-    font-size: clamp(35px, 5vw, 58px);
-
+.tomography-reconstruction h2 {
+    font-size: clamp(36px, 5vw, 58px);
     line-height: 1.05;
-
     letter-spacing: -2px;
 }
 
-.tomography-methods-text p {
-    color: rgba(255,255,255,0.70);
-
-    font-size: 16px;
-
+.tomography-reconstruction p {
+    color: #666;
+    font-size: 17px;
     line-height: 1.8;
-
-    margin-bottom: 20px;
-}
-
-
-/* =========================================
-   METHOD CARDS
-   ========================================= */
-
-.tomography-method-grid {
-    max-width: 1140px;
-
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.tomography-method-card {
-    padding: 35px;
-
-    background: rgba(255,255,255,0.06);
-
-    border: 1px solid rgba(255,255,255,0.12);
-}
-
-.tomography-method-card span {
-    color: rgba(255,255,255,0.45);
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-}
-
-.tomography-method-card h3 {
-    color: #ffffff;
-
-    font-size: 25px;
-
-    margin: 20px 0 15px;
-}
-
-.tomography-method-card p {
-    color: rgba(255,255,255,0.62);
-
-    font-size: 14px;
-
-    line-height: 1.75;
+    margin-bottom: 22px;
 }
 
 
@@ -1686,40 +1561,29 @@ footer p {
    ========================================= */
 
 .tomography-future {
-    max-width: 1140px;
+    margin-top: 120px;
 
-    margin: 120px auto 20px;
+    padding: 70px 0;
 
-    padding: 80px 0 0;
-
-    border-top: 1px solid rgba(255,255,255,0.18);
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 80px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .tomography-future .section-label {
-    color: rgba(255,255,255,0.50);
+    color: #777;
 }
 
-.tomography-future h2 {
-    color: #ffffff;
-
-    font-size: clamp(35px, 5vw, 55px);
-
-    line-height: 1.08;
-
-    letter-spacing: -2px;
+.tomography-future h3 {
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.1;
+    margin: 20px 0 25px;
 }
 
-.tomography-future > div:last-child p {
-    color: rgba(255,255,255,0.70);
+.tomography-future p {
+    max-width: 850px;
 
-    font-size: 16px;
-
+    color: #666;
+    font-size: 17px;
     line-height: 1.8;
 
     margin-bottom: 20px;
@@ -1732,53 +1596,58 @@ footer p {
 
 @media (max-width: 850px) {
 
-    .tomography-introduction,
-    .tomography-system,
-    .tomography-methods,
-    .tomography-future {
+    .diagnostic-tomography,
+    .tomography-feature,
+    .tomography-reconstruction {
         grid-template-columns: 1fr;
-
         gap: 40px;
     }
 
-    .tomography-introduction {
+    .diagnostic-tomography {
         margin-top: 80px;
-
-        padding-top: 70px;
+        padding-top: 60px;
     }
 
-    .tomography-components {
+    .tomography-feature {
+        margin-top: 70px;
+    }
+
+    .tomography-grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    .tomography-component:nth-child(2) {
+    .tomography-card:nth-child(2) {
         border-right: none;
     }
 
-    .tomography-method-grid {
-        grid-template-columns: 1fr;
+    .tomography-card:nth-child(3),
+    .tomography-card:nth-child(4) {
+        border-top: 1px solid #ddd;
+    }
+
+    .tomography-reconstruction {
+        margin-top: 80px;
+        padding-top: 60px;
     }
 
     .tomography-future {
         margin-top: 80px;
     }
-
 }
 
 
 @media (max-width: 550px) {
 
-    .tomography-components {
+    .tomography-grid {
         grid-template-columns: 1fr;
     }
 
-    .tomography-component {
+    .tomography-card {
         border-right: none;
-
-        border-bottom: 1px solid rgba(255,255,255,0.18);
+        border-bottom: 1px solid #ddd;
     }
 
-    .tomography-component:last-child {
+    .tomography-card:last-child {
         border-bottom: none;
     }
 
