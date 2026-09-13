@@ -305,7 +305,7 @@
                     </span>
 
                     <h3>
-                        Synchronized Acquisitio
+                        Synchronized Acquisition
                     </h3>
 
                     <p>
@@ -409,14 +409,15 @@
                     </span>
 
                     <h3>
-                        Back Projection
+                        Filtered Back Projection
                     </h3>
 
                     <p>
-                        Direct back projection is used to distribute
+                        Filtered back projection is used to distribute
                         measured projection information across the
                         reconstruction domain and obtain an initial
-                        estimate of the spatial emission distribution.
+                        estimate of the spatial emission distribution. The filtering is done in 
+                        the Fourier domain, and in this case a ramp filter is used with Gaussian post-smoothing.
                     </p>
 
                 </div>
@@ -432,7 +433,7 @@
                 <div class="simulation-image">
 
                     <img
-                        src="pos_2.png"
+                        src="pos_1.png"
                         alt="3D tomography reconstruction">
 
                 </div>
@@ -444,7 +445,7 @@
                     </span>
 
                     <h3>
-                        Filtered Back Projection
+                        3D Reconstruction
                     </h3>
 
                     <p>
@@ -467,7 +468,7 @@
                 <div class="simulation-image">
 
                     <img
-                        src="images/pos_1.png"
+                        src="images/pos_2.png"
                         alt="3D tomography reconstruction">
 
                 </div>
@@ -483,7 +484,8 @@
                     </h3>
 
                     <p>
-                        The magnet is linearly translated through the tomographic plane and using these projections, a 3D mapping of the Magnetic field is done
+                        The magnet is linearly translated through the tomographic plane and using these projections, 
+                        a 3D mapping of the Magnetic field is done by stacking the images together.
                     </p>
 
                 </div>
@@ -542,40 +544,48 @@
          FUTURE DEVELOPMENT
          ========================================= -->
 
-    <section class="simulation-section">
+<section class="simulation-section">
 
-        <div class="section-heading">
+    <div class="section-heading">
 
-            <p class="eyebrow">
-                ONGOING DEVELOPMENT
-            </p>
+        <p class="eyebrow">
+            ONGOING DEVELOPMENT
+        </p>
 
-            <h2>
-                Towards time-resolved
-                volumetric diagnostics
-            </h2>
+        <h2>
+            Towards time-resolved
+            volumetric diagnostics
+        </h2>
 
-            <p class="section-description">
+        <p class="section-description">
 
-                Current development focuses on improving the
-                experimental geometry, increasing the number of
-                viewing directions and improving the accuracy of
-                tomographic reconstruction.
+            Current development focuses on improving the
+            experimental geometry, increasing the number of
+            viewing directions and improving the accuracy of
+            tomographic reconstruction.
 
-                <br><br>
+            <br><br>
 
-                Future extensions will investigate time-resolved
-                measurements and the possibility of extending the
-                diagnostic from two-dimensional reconstruction towards
-                more complete spatial characterization of
-                photon-emitting plasma and beam-related phenomena.
+            Future extensions will investigate time-resolved
+            measurements and the possibility of extending the
+            diagnostic from two-dimensional reconstruction towards
+            more complete spatial characterization of
+            photon-emitting plasma and beam-related phenomena.
 
-            </p>
+        </p>
 
-        </div>
+    </div>
 
-    </section>
+    <div class="tomography-main-image">
 
+        <img
+            src="../images/beam_movie_shot_3.gif"
+            alt="Time-resolved volumetric diagnostic development"
+        >
+
+    </div>
+
+</section>
 
 </main>
 
